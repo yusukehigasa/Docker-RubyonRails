@@ -35,7 +35,7 @@ $ docker-compose up
 
 ### DB Migration on the App
 ```
-$ docker-compose exec spring spring rake db:create
+$ docker-compose run web rails db:create
 ```
 
 ### Watch the App
