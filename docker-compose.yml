@@ -10,6 +10,14 @@ services:
         ports:
             - "3306:3306"
 
+    redis:
+        image: redis:3.2.9
+        volumes:
+            - ".redis_data:/data"
+        ports:
+            - "6379:6379"
+        command: redis-server --appendonly yes --requirepass foobared
+
     web:
         build: .
         command: bundle exec rails s -p 3000 -b "0.0.0.0"
@@ -19,3 +27,4 @@ services:
             - "3000:3000"
         links:
             - db
+            - redis
