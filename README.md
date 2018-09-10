@@ -1,10 +1,16 @@
 # Docker-RubyonRails
 For begining of Ruby on Rails with Docker.
 
+#### Includes the following components:
+- Ruby 2.5.0
+- Ruby on Rails 5.2.1
+- Mysql 5.7
+- Redis 3.2.9
+
 ## Usage
 Clone this repo
 ```
-$ https://github.com/yusukehigasa/Docker-RubyonRails.git
+$ git clone https://github.com/yusukehigasa/Docker-RubyonRails.git
 ```
 
 ### Make new app
