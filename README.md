@@ -47,6 +47,11 @@ $ docker-compose run web rails db:create
 ### Watch the App
 Open http://localhost:3000 in your browser.
 
+### Run Rails console
+```
+$ docker-compose run web rails c
+```
+
 #### Thank you for check out this.
 
 ## Author
